@@ -138,8 +138,8 @@ document.addEventListener('DOMContentLoaded', function() {
 function kirimKeWA() {
   const nama = document.getElementById('nama-guest').value;
   const pesan = document.getElementById('pesan-guest').value;
-  // const nomorWA = "6282386883145"; 
-  const nomorWA = "6282374694215"; 
+  const nomorWA = "6282386883145"; 
+  // const nomorWA = "6282374694215"; 
 
   if (nama && pesan) {
     const formatPesan = `Halo Febi & Riska, Saya *${nama}* mengucapkan: \n\n"${pesan}"`;
