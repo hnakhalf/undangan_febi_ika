@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di pernikahan kami.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://website-kamu.com/"> <meta property="og:title" content="The Wedding of Febi & Riska">
+  <meta property="og:description" content="Minggu, 18 Januari 2026 - Klik untuk melihat undangan selengkapnya.">
+  <meta property="og:image" content="https://website-kamu.com/img/thumbnail.jpg"> <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="The Wedding of Febi & Riska">
+  <meta property="twitter:description" content="Minggu, 18 Januari 2026 - Klik untuk melihat undangan selengkapnya.">
+  <meta property="twitter:image" content="https://website-kamu.com/img/thumbnail.jpg">
+  <title>Undangan Pernikahan</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body class="lock-scroll">
+
+<!-- ORNAMEN ATAS -->
+<svg class="ornament top" viewBox="0 0 200 60" preserveAspectRatio="none">
+  <path d="M0,60 C50,10 150,10 200,60" />
+</svg>
+
+<!-- ORNAMEN BAWAH -->
+<svg class="ornament bottom" viewBox="0 0 200 60" preserveAspectRatio="none">
+  <path d="M0,0 C50,50 150,50 200,0" />
+</svg>
+
+<!-- OPENING -->
+<!-- <div class="opening" id="opening">
+  <div id="petal-container"></div>
+  <div class="bg-decor"></div>
+  <div class="cover-bg"></div>
+  
+  <div class="cover-card">
+    <div class="corner-ornament top-left"></div>
+    <div class="corner-ornament bottom-right"></div>
+
+    <div class="content-wrapper" style="text-align: center;">
+      <span class="cover-label">The Wedding of</span>
+
+      <h1 class="cover-title">
+        <span class="name">Febi</span>
+        <span class="ampersand">&</span>
+        <span class="name">Riska</span>
+      </h1>
+
+      <div class="divider-fancy">
+        <span></span>
+        <i class="icon-heart">❤</i>
+        <span></span>
+      </div>
+
+      <div class="guest-box">
+        <small>Kepada Yth. Bapak/Ibu/Saudara/i</small>
+        <strong id="guestName">Tamu Undangan</strong>
+      </div>
+
+      <button class="open-btn" onclick="openInvitation()">
+        <span class="btn-text">Buka Undangan</span>
+      </button>
+    </div>
+  </div>
+</div> -->
+
+<div class="opening" id="opening">
+  <div id="petal-container"></div>
+  <div class="cover-bg"></div>
+  
+  <div class="cover-card">
+    <!-- <div class="corner-ornament top-left">🌸</div>
+    <div class="corner-ornament bottom-right">🍃</div> -->
+
+    <div class="content-wrapper">
+      <span class="cover-label">The Wedding of</span>
+
+      <h1 class="cover-title">
+        <span class="name">Febi</span>
+        <span class="ampersand">&</span>
+        <span class="name">Riska</span>
+      </h1>
+
+      <div class="guest-box">
+        <small>Kepada Yth. Bapak/Ibu/Saudara/i</small>
+        <strong id="guestName">Tamu Undangan</strong>
+      </div>
+
+      <button class="open-btn" onclick="openInvitation()">
+        Buka Undangan
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="music-control" id="musicBtn" onclick="toggleMusic()">
+  <span id="musicIcon">🎵</span>
+</div>
+
+<audio id="music" loop>
+  <source src="audio/muara.mp3" type="audio/mpeg">
+</audio>
+
+<section class="hero-inner">
+  <div class="leaf leaf-1">🍃</div>
+  <div class="leaf leaf-2">🌿</div>
+  <div class="hero-content">
+    <span class="sub-title">The Wedding of</span>
+    <h2>Febi & Riska</h2>
+    <p class="date">Minggu, 18 Januari 2026</p>
+    <!-- <div id="countdown" class="countdown-styled"></div> -->
+  </div>
+</section>
+
+<section class="section-countdown" data-aos="fade-up">
+  <div class="container">
+    <h3 class="countdown-title">Menuju Hari Bahagia</h3>
+    <div id="countdown" class="countdown-wrapper">
+      <div class="timer">00<span>Hari</span></div>
+      <div class="timer">00<span>Jam</span></div>
+      <div class="timer">00<span>Menit</span></div>
+      <div class="timer">00<span>Detik</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-mukadimah" data-aos="fade-up">
+  <div class="container">
+    <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+    <p class="intro-text">
+      Assalamu’alaikum Warahmatullahi Wabarakatuh.
+      <br><br>
+      Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta’ala, insyaaAllah kami akan menyelenggarakan acara <strong>Ngunduh Mantu</strong> pernikahan putra-putri kami:
+    </p>
+    <div class="divider-leaf">🌿</div>
+  </div>
+</section>
+
+<section class="section-mempelai">
+  <div class="bg-ornament-top"></div>
+  <div class="bg-ornament-bottom"></div>
+
+  <div class="container">
+   <div class="mempelai-wrapper">
+      <div class="mempelai-card" data-aos="fade-up">
+        <div class="photo-container">
+          <div class="photo-frame-premium">
+            <img src="img/febi.jpeg" alt="Febi">
+          </div>
+          <div class="frame-ornament tl ornament-anim">🍂</div>
+          <div class="frame-ornament br ornament-anim">🌸</div>
+        </div>
+        <h3 class="name-display">Febi Kurniawan Pratama</h3>
+        <p class="parent-info">Putra dari <br> <strong>Bapak Amiruddin & Ibu Normirawati</strong></p>
+        <a href="https://www.instagram.com/febi_zz13/" class="ig-link">@febi_zz13</a>
+      </div>
+      
+      <div class="ampersand-divider">
+        <span class="line"></span>
+        <span class="symbol">and</span>
+        <span class="line"></span>
+      </div>
+
+     <div class="mempelai-card female-version" data-aos="fade-up"> <div class="photo-frame">
+        <img src="img/ika.jpeg" alt="Riska">
+        <div class="frame-flower tr ornament-anim">🍂</div>
+        <div class="frame-flower bl ornament-anim">🌸</div>
+      </div>
+      <h3 class="name-display">Riska Nurratul Hikmah</h3>
+      <p class="parent-info">Putri dari <br> <strong>Bapak Irzal (Alm) & Ibu Yusmi IB</strong></p>
+      <a href="https://www.instagram.com/ikaaee_11/" class="ig-link">@ikaaee_11</a>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-invitation-text" data-aos="fade-up">
+  <div class="container">
+    <div class="divider-thin"></div>
+    <p class="formal-invite">
+      Dengan segala kerendahan hati, kami sangat berharap kehadiran Bapak/Ibu/Saudara/i dalam acara <strong>Ngunduh Mantu</strong> pernikahan putra-putri kami yang akan diselenggarakan pada:
+    </p>
+  </div>
+</section>
+
+<section class="section-acara">
+  <div class="bg-texture"></div> <div class="container">
+    <div class="section-header" data-aos="fade-up" style="text-align: center;">
+      <span class="sub-title">The Celebration</span>
+      <h3>Rangkaian Acara</h3>
+      <div class="divider-fancy">
+        <span></span>
+        <i class="icon-leaf">🌿</i>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="event-timeline">
+      <div class="event-card-premium" data-aos="fade-right">
+        <div class="event-badge">Pre-Event</div>
+        <div class="event-content">
+          <div class="event-icon">💍</div>
+          <h4>Akad Nikah</h4>
+          <p class="event-date">Minggu, 11 Januari 2026</p>
+          <p class="event-time">08.00 - 10.00 WIB</p>
+          <div class="divider-small"></div>
+          <p class="location-name">Kediaman Mempelai Wanita</p>
+          <p class="address-detail">Jl. Ibadah RT 06/RW 04, Desa Tanah Merah</p>
+        </div>
+      </div>
+
+      <div class="event-card-premium main-event" data-aos="fade-left">
+        <div class="event-badge gold">Main Event</div>
+        <div class="event-content">
+          <div class="event-icon">✨</div>
+          <h4>Ngunduh Mantu</h4>
+          <p class="event-date">Minggu, 18 Januari 2026</p>
+          <p class="event-time">10.00 - Selesai</p>
+          <div class="divider-small"></div>
+          <p class="location-name">Kediaman Mempelai Pria</p>
+          <p class="address-detail">Jl. Sapta Marga Ujung Lr. Samarinda 5 RT 005/RW 013, Tembilahan Hulu</p>
+
+          <a href="https://www.google.com/maps/place/0%C2%B019'30.2%22S+103%C2%B008'23.9%22E/@-0.3251975,103.1384314,17.37z/data=!4m4!3m3!8m2!3d-0.3250645!4d103.139979?hl=id&entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-maps-event">
+            <i class="icon-pin">📍</i> Lihat Lokasi di Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-verse" data-aos="fade-up">
+  <div class="container">
+    <div class="verse-content">
+      <div class="verse-icon">🌿</div>
+      
+      <p class="arabic-text">
+        وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ
+      </p>
+
+      <p class="translation-text">
+        "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
+      </p>
+
+      <span class="verse-source">(QS. Ar-Rum: 21)</span>
+      
+      <div class="divider-fancy bottom">
+        <span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-gallery">
+  <div class="container">
+    <div class="gallery-header" data-aos="fade-up">
+      <span class="sub-title">Our Moments</span>
+      <h3>Galeri Foto</h3>
+      <div class="divider-small"></div>
+    </div>
+    
+    <div class="gallery-masonry">
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+        <img src="img/foto1.jpeg" alt="Momen 1">
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+        <img src="img/foto2.jpeg" alt="Momen 2">
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+        <img src="img/foto3.jpeg" alt="Momen 3">
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+        <img src="img/foto4.jpeg" alt="Momen 4">
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+        <img src="img/foto5.jpeg" alt="Momen 5">
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600">
+        <img src="img/foto6.jpeg" alt="Momen 6">
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="700">
+        <img src="img/foto7.jpeg" alt="Momen 7">
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="800">
+        <img src="img/foto8.jpeg" alt="Momen 8">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-kado" data-aos="fade-up">
+  <div class="container">
+    <div class="section-header">
+      <span class="sub-title">Share Love</span>
+      <h3>Kado Digital</h3>
+      <div class="divider-fancy"><span></span>🌿<span></span></div>
+      <p class="kado-intro">
+        Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Namun jika memberi adalah ungkapan tanda kasih, Anda dapat memberi kado secara cashless:
+      </p>
+    </div>
+
+    <div class="gift-wrapper">
+      <div class="gift-card">
+        <div class="bank-logo">
+          <img src="img/BRI_2020.png" alt="BRI" style="width: 80px;">
+        </div>
+        <p class="account-number" id="norek1">557201022902539</p>
+        <p class="account-name">A.N RISKA NURRATUL H</p>
+        <button class="btn-copy" onclick="copyToClipboard('norek1', this)">
+          <span>📋</span> Salin No. Rekening
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-ucapan" data-aos="fade-up">
+  <div class="container">
+    <div class="section-header">
+      <span class="sub-title">Guest Book</span>
+      <h3>Ucapan & Doa Restu</h3>
+      <div class="divider-fancy"><span></span>📝<span></span></div>
+    </div>
+
+    <div class="ucapan-wrapper">
+      <div class="ucapan-form">
+        <div class="input-field">
+          <input type="text" id="nama-guest" placeholder="Nama Anda" required>
+        </div>
+        <div class="input-field">
+          <textarea id="pesan-guest" rows="3" placeholder="Tulis ucapan & doa restu..." required></textarea>
+        </div>
+        <button onclick="kirimKeWA()" class="btn-wa-modern">
+          Kirim Ucapan via WhatsApp
+        </button>
+      </div>
+
+      <div class="ucapan-feed">
+        <div class="feed-item">
+          <div class="user-avatar">G</div>
+          <div class="feed-content">
+            <strong>Gusti</strong>
+            <p>Selamat menempuh hidup baru. Semoga kebahagiaan dan keberkahan selalu menyertai setiap langkah kalian. Happy Wedding 🤍</p>
+            <span class="feed-time">5 menit yang lalu</span>
+          </div>
+        </div>
+
+        <div class="feed-item">
+          <div class="user-avatar">A</div>
+          <div class="feed-content">
+            <strong>Andi & Keluarga</strong>
+            <p>Selamat menempuh hidup baru Febi & Ika! Semoga menjadi keluarga yang sakinah, mawaddah, warahmah. Amin.</p>
+            <span class="feed-time">2 jam yang lalu</span>
+          </div>
+        </div>
+
+        <div class="feed-item">
+          <div class="user-avatar">E</div>
+          <div class="feed-content">
+            <strong>Erie Arya dan Partner</strong>
+            <p>Happy wedding! Akhirnya sah juga 😄. Semoga langgeng, bahagia, dan selalu kompak sampai kakek-nenek 💕</p>
+            <span class="feed-time">3 jam yang lalu</span>
+          </div>
+        </div>
+
+        <div class="feed-item">
+          <div class="user-avatar">S</div>
+          <div class="feed-content">
+            <strong>Siti Aminah</strong>
+            <p>Barakallahu lakum wa baraka alaikum... Selamat ya buat kalian berdua, semoga bahagia dunia akhirat!</p>
+            <span class="feed-time">5 jam yang lalu</span>
+          </div>
+        </div>
+
+        <div class="feed-item">
+          <div class="user-avatar">B</div>
+          <div class="feed-content">
+            <strong>Budi Santoso</strong>
+            <p>Happy Wedding! Maaf belum bisa hadir langsung, doa terbaik buat Febi & Ika dari jauh.</p>
+            <span class="feed-time">1 hari yang lalu</span>
+          </div>
+        </div>
+
+        <div class="feed-item">
+          <div class="user-avatar">R</div>
+          <div class="feed-content">
+            <strong>Runi dan Suami</strong>
+            <p>Barakallahu lakuma wa baraka 'alaikuma wa jama'a bainakuma fii khoir.Semoga menjadi keluarga yang sakinah, mawaddah, warahmah. 🤲💐</p>
+            <span class="feed-time">1 hari yang lalu</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-section">
+  <div class="container" data-aos="fade-up">
+    <p class="closing-thanks">
+      Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai.
+    </p>
+
+    <h2 class="footer-names">Febi & Riska</h2>
+
+    <div class="family-list">
+      <div class="family-side">
+        <p>Keluarga Besar</p>
+        <strong>Bapak Amiruddin & Ibu Normirawati</strong>
+      </div>
+      <div class="family-side">
+        <p>Keluarga Besar</p>
+        <strong>Bapak Irzal (Alm) & Ibu Yusmi IB</strong>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="credit">
+      <p>Dibuat dengan 🤍 untuk <strong>Febi & Riska</strong></p>
+      <p>&copy; 2025 Hn Akhalf</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,      // durasi animasi 0.8s
+    easing: 'ease-out', // efek smooth
+    once: true,         // animasi hanya terjadi sekali
+    offset: 120         // jarak sebelum animasi mulai
+  });
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
